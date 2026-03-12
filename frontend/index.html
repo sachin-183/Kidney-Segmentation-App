@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kidney Stone Segmentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Kidney Stone Segmentation</h1>
+
+        <p>Upload CT Scan Image</p>
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <button onclick="uploadImage()">Predict</button>
+        <div>
+            <div class="preview">
+                <h3>Original Image</h3>
+                <img id="originalImage">
+            </div>
+
+            <div class="result">
+                <h3>Predicted Mask</h3>
+                <img id="resultImage">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
